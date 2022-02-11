@@ -115,6 +115,7 @@
       (setq evil-want-C-i-jump nil)
       :config
       (evil-mode 1)
+    (evil-set-undo-system 'undo-redo)
       (define-key evil-insert-state-map (kbd "C-g") 'evil-normal-state)
       (define-key evil-insert-state-map (kbd "C-h") 'evil-delete-backward-char-and-join)
 
@@ -411,6 +412,16 @@
       (org-babel-tangle))))
 
 (add-hook 'org-mode-hook (lambda () (add-hook 'after-save-hook #'efs/org-babel-tangle-config)))
+
+(use-package org-roam
+  :ensure t
+  :custom
+  (org-roam-directory "~/Documents/org/roam-notes")
+  :bind (("C-c n l" . org-roam-buffer-toggle)
+         ("C-c n f" . org-roam-node-find)
+         ("C-c n i" . org-roam-node-insert))
+  :config
+  (org-roam-setup))
 
 (defun efs/lsp-mode-setup ()
   (setq lsp-headerline-breadcrumb-segments '(path-up-to-project file symbols))
