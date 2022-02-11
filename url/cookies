@@ -1,0 +1,23 @@
+;; Emacs-W3 HTTP cookies file
+;; Automatically generated file!!! DO NOT EDIT!!!
+
+(setq url-cookie-storage
+ '(("wordle.com"
+  [url-cookie "mtm_delivered" "WyJ3b3JkbGUuY29tIiwiaHR0cDovL3d3dzYud29yZGxlLmNvbS8_dGVtcGxhdGU9VkVSVElDQUxfTElORVMmdGRmcz0xJnNfdG9rZW49MTY0NDE4Njg4NC4wMTI5NjYwMDAwJnV1aWQ9MTY0NDE4Njg4NC4wMTI5NjYwMDAwJnRlcm09UGxheSUyMFdvcmRsZSZ0ZXJtPU1vYmlsZSUyMEdhbWUlMjBIb3N0aW5nJTIwU2VydmVyJnRlcm09Q29ubmVjdCUyMHRvJTIwR2FtZSUyMEhvc3RpbmclMjBTZXJ2ZXIlMjBpbiUyME5ldyUyMFlvcmsmdGVybT1Xb3JkJTIwR2VuZXJhdGlvbiUyMFNvZnR3YXJlJnNlYXJjaGJveD0wJnNob3dEb21haW49MCZiYWNrZmlsbD0wIiwxLCIyMDIyLTAyLTA2IDIyOjM0OjQ0IiwxLCIxNjQ0MTg2ODg0LjAxMjk2NjAwMDAiLDMyOSxudWxsLG51bGxd:1nGq7I:Z3pARO-nOZ2vEJaDj2OO3g_xn_c" "Sun Feb 06 23:34:45 2022 GMT" "/" "wordle.com" nil])
+ ("www6.wordle.com"
+  [url-cookie "caf_ipaddr" "185.199.103.170" "Mon Feb 07 22:34:45 2022 GMT" "/" "www6.wordle.com" nil]
+  [url-cookie "country" "US" "Mon Feb 07 22:34:45 2022 GMT" "/" "www6.wordle.com" nil]
+  [url-cookie "city" "Los Angeles" "Mon Feb 07 22:34:45 2022 GMT" "/" "www6.wordle.com" nil]
+  [url-cookie "expiry_partner" "" "Mon Feb 07 22:34:45 2022 GMT" "/" "www6.wordle.com" nil])
+ (".google.com"
+  [url-cookie "NID" "511=pWTLcVzolulFyXmGGk3Gq6lE5AtaIt2mBIo1X7taj-u5y3rcQ0_U98baAfw94wggJzty9BlOb8NwBfH6oLOUb7JDBVlKW0GmX4AZldX6xGsk9SoeWTo9oevozyRLkyCOo1rLOsGzSRTKRdN0sRiYHNQeiVljuJVVpUnggZQvHRM" "Mon, 08-Aug-2022 22:34:04 GMT" "/" ".google.com" nil]))
+)
+(setq url-cookie-secure-storage
+ '((".google.com"
+  [url-cookie "1P_JAR" "2022-02-06-22" "Tue, 08-Mar-2022 22:34:14 GMT" "/" ".google.com" t]))
+)
+
+;; Local Variables:
+;; version-control: never
+;; no-byte-compile: t
+;; End:

@@ -1,0 +1,55 @@
+(global-set-key (kbd "C-c l") #'org-store-link)
+(global-set-key (kbd "C-c a") #'org-agenda)
+(global-set-key (kbd "C-c c") #'org-capture)
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(org-agenda-files '("~/Documents/org/gettodo.org"))
+ '(org-startup-folded 'overview)
+ '(org-startup-indented t)
+ '(package-selected-packages
+   '(visual-fill-column org-bullets which-key yasnippet-snippets yasnippet embark-consult embark company marginalia orderless vertico use-package))
+ '(show-paren-mode t))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ )
+
+(setq inhibit-startup-message t)
+(setq visible-bell t)
+
+(tool-bar-mode -1)
+(scroll-bar-mode -1)
+(hl-line-mode 1)
+(blink-cursor-mode 1)
+;;(menu-bar-mode -1)
+
+(global-display-line-numbers-mode 1)
+
+(load-theme 'deeper-blue t)
+
+;; Initialize package sources
+(require 'package)
+
+(setq package-archives '(("melpa" . "https://melpa.org/packages/")
+                         ("org" . "https://orgmode.org/elpa/")
+                         ("elpa" . "https://elpa.gnu.org/packages/")
+			 ))
+
+(package-initialize)
+
+;; bootstrap `usepackage'
+
+(unless package-archive-contents
+ (package-refresh-contents))
+(unless (package-installed-p 'use-package)
+   (package-install 'use-package))
+
+(require 'use-package)
+(setq use-package-always-ensure t)
+
+(org-babel-load-file (expand-file-name "~/.emacs.d/config.org"))
