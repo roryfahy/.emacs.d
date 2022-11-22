@@ -1,1 +1,1 @@
-("~/.emacs.d/" "~/.emacs.d/elpa/vterm-20211226.817/")
+("~/.emacs.d/")

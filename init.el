@@ -116,7 +116,8 @@
       :config
       (evil-mode 1)
     (evil-set-undo-system 'undo-redo)
-      (define-key evil-insert-state-map (kbd "C-g") 'evil-normal-state)
+       ;; (define-key evil-insert-state-map (kbd "C-g") 'evil-normal-state)
+      (define-key evil-insert-state-map (kbd "C-f") 'evil-normal-state)
       (define-key evil-insert-state-map (kbd "C-h") 'evil-delete-backward-char-and-join)
 
       ;; Use visual line motions even outside of visual-line-mode buffers
